@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+
+<head>
+    <meta charset="utf-8">
+    <title>Responsive Navigation Bar</title>
+    <link rel="stylesheet" href="style_5.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hello {
+            width: 100%;
+            background-color: black;
+
+        }
+
+        .hello p {
+            position: relative;
+            font-size: 22px;
+            color: white;
+            text-align: center;
+            padding: 10px 15px;
+            
+        }
+
+        .hello p:after {
+            position: absolute;
+            content: '';
+            left: 5px;
+            bottom: 5px;
+            height: 2px;
+            width:20%;
+            background: #33ffff;
+            opacity: 0;
+            transition: all 0.2s linear;
+            text-align: center;
+        }
+
+        .hello p:hover:after {
+            opacity: 1;
+            bottom: 8px;
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="hello">
+        <p>Ha Thanh Dung</p>
+    </div>
+
+
+</body>
+
+</html>
